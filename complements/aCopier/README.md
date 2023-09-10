@@ -1,9 +1,10 @@
-Copie des fichiers du serveur des pages perso d'Orange au 28/07/2023
+Mise à jour de la version au 10 Septembre 2023
+
 adaptés pour github.
 
 Pour voir le résultat :
 
-https://guytitt.github.io/hebreu
+https://guytitt.github.io/hebreu3.1
 
 Bonne lecture.
 
