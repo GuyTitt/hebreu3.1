@@ -18,7 +18,7 @@ import io
 import csv
 import pprint
 import bs4
-import json
+import hjson
 #
 def trier(fichiers):
     nombreDeFichiers=len(fichiers)
@@ -302,6 +302,6 @@ champs=("position","nomAAfficher","formatNomAAfficher","codeAAfficher","formatCo
 out=""
 effaceFichiers(dossierHTML)
 with open("/".join([racineWeb,"complements","struct.json"]), "r",encoding='utf8' ) as f_json:
-    listeTranslite=json.load(f_json)
+    listeTranslite=hjson.load(f_json)
 traiteDossier(racineWeb,"Documents","",out,0)
 ###

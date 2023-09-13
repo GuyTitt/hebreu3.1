@@ -4,7 +4,7 @@ echo **   Creation du site pour Francis    **
 echo ********************************* V.2 **
 echo .
 echo Pour fonctionner, cela necessite le langague python
-echo           et les bibliotheques : beautifulsoup4, html5lib, bottle, ( en standard : csv, argparse, html, io ,os )
+echo           et les bibliotheques : beautifulsoup4, html5lib, bottle, hjson( en standard : csv, argparse, html, io ,os )
 echo .
 set versionsite=SiteGITHUB
 rem les variables de chez guy et de chez francis

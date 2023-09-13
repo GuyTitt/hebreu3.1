@@ -5,7 +5,7 @@ import argparse
 import html
 import io
 import re
-import json
+import hjson
 #----------------------------------------------------------------------------
 modeleDocumentTete="""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -169,7 +169,7 @@ if __name__ == "__main__":
     dossierDocuments=re.sub("/[^/]+/\.\./|/\./","/",dossierDocuments.replace("\\","/"))
     longDossierDocuments=len(dossierDocuments)
     with open("/".join([args.root,"complements","struct.json"]), "r",encoding='utf8' ) as f_json:
-        trans=json.load(f_json)
+        trans=hjson.load(f_json)
 #    print(f"{fichierSortie=}")
     with io.open (fichierSortie, "w",encoding='utf8' ) as monfich:
         ecrire(modeleDocumentTete.replace("§§site§§",racineSite))
